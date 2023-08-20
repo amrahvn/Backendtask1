@@ -1,0 +1,17 @@
+﻿
+@model List<Model1>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<ul>
+    @foreach (Model1 model1 in Model)
+    {
+        <a>
+           <li>Model adı:@model1.Name</li>
+        </a>
+    }
+</ul>
+

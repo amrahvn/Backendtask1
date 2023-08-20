@@ -1,0 +1,14 @@
+﻿
+@model Marka
+
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<ul>
+    <li>Modelin adı: @Model.Name</li>
+    <li>Yarandıqı ölkə: @Model.Country</li>
+    <li>Yarandıqı Tarix: @Model.YearFounded</li>
+
+    <a asp-controller="Model1" asp-action="Index" asp-route-id="@Model.Id">Markalar</a>
+</ul>
